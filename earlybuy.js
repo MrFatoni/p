@@ -80,7 +80,7 @@ try {
   //console.log(`new token => https://bscscan.com/token/${tokenOut} - liquidity ${bnbne} BNB`);
   
   
-  
+  //if(tokenOut === targettoken{ //targettoken isi targettoken kalian
   if(pairBNBvalue > 1000000000000000000){ //minimal liquidity 10 BNB https://eth-converter.com
   //console.log(`address LP ${getPairx} -  LIQ ${bnbne} BNB`)
   
