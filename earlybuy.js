@@ -123,8 +123,8 @@ const approve = await tokennya.approve(
      //HAPUS KOMEN KALO MAU AKTIFIN APPROVE
   //const approvereceipt = await approve.wait();
   //console.log(`approve tx: https://bscscan.com/tx/${approvereceipt.logs[1].transactionHash}`); //gamuncul kenapa?? w ga pro nodejs
- 
-  process.exit(); //panik mode
+  console.log('Nunggu token baru...');
+  process.exit(); //panik mode, kasih komen biar jalan trus
     
   }
   
