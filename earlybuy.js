@@ -124,7 +124,7 @@ const approve = await tokennya.approve(
   //const approvereceipt = await approve.wait();
   //console.log(`approve tx: https://bscscan.com/tx/${approvereceipt.logs[1].transactionHash}`); //gamuncul kenapa?? w ga pro nodejs
  
-  
+  process.exit(); //panik mode
     
   }
   
