@@ -13,6 +13,7 @@ const ethers = require('ethers');
 
 const addresses = {
   WBNB: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+//  BUSD: '0x55d398326f99059ff775485246999027b3197955', gabisa, pake wbnb dulu
   factory: '0xca143ce32fe78f1f7019d7d551a6402fc5350c73', //ini v1 > '0xBCfCcbde45cE874adCB698cC183deBcF17952812',
   router: '0x10ed43c718714eb63d5aa57b78b54704e256024e', //ini v1 >'0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F',
   recipient: '' //address walletmu
@@ -79,9 +80,9 @@ try {
   //console.log(tokenOut);
   //console.log(`new token => https://bscscan.com/token/${tokenOut} - liquidity ${bnbne} BNB`);
   
-  
-  //if(tokenOut === targettoken{ //targettoken isi targettoken kalian
-  if(pairBNBvalue > 1000000000000000000){ //minimal liquidity 10 BNB https://eth-converter.com
+  //var targettoken = '0xxxxxxxxxxxxx'; //targettoken isi targettoken kalian
+  //if(tokenOut === targettoken){ //kalo pake ini hapus komen, di line 129 juga
+  if(pairBNBvalue > 25000000000000000000){ //minimal liquidity 25 BNB https://eth-converter.com
   //console.log(`address LP ${getPairx} -  LIQ ${bnbne} BNB`)
   
   const amountOutMin = amounts[1].sub(amounts[1].div(10));
@@ -125,7 +126,7 @@ const approve = await tokennya.approve(
   //console.log(`approve tx: https://bscscan.com/tx/${approvereceipt.logs[1].transactionHash}`); //gamuncul kenapa?? w ga pro nodejs
   console.log('Nunggu token baru...');
   process.exit(); //panik mode, kasih komen biar jalan trus
-    
+    //}
   }
   
 } catch(error) { 
