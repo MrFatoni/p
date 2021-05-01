@@ -1,5 +1,11 @@
 # DWYOR
 
+npm install ethers
+
+
+npm install web3
+
+
 edit line 18 recipient: '' //address walletmu
 
 
