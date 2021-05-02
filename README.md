@@ -2,7 +2,6 @@
 
 ## Contact telegram: @MRFCiki
 
-## Someone selling this script, do not buy
 
 npm install ethers
 
