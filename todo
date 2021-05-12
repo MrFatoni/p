@@ -13,3 +13,13 @@ const addresses = {
     quickSwapRouter: '0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff'
   }
 }
+
+
+const pair = new ethers.Contract(pairAddress, ['event Mint(address indexed sender, uint amount0, uint amount1)'], account);
+
+  pair.on('Mint', async (sender, amount0, amount1) => {
+    if(initialLiquidityDetected === true) {
+        return;
+    }
+
+    initialLiquidityDetected = true;
