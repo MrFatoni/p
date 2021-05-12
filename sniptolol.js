@@ -120,7 +120,6 @@ const approve = await tokennya.approve(
 
   const approvereceipt = await approve.wait();
   console.log(approvereceipt);
-  console.log('Nunggu token baru...');
   process.exit(); //panic mode
     //}
   }
