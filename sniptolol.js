@@ -1,10 +1,10 @@
-//gratis jangan bacot
+//versi gratis, jangan bacot
 const ethers = require('ethers');
-const wssurl = ''; //private node lebih gud
+const wssurl = ''; //quiknode/ankr
 const mnemonic = ''; //privatekey tanpa 0
 const amountIn = ethers.utils.parseUnits('0.003', 'ether'); //buy amount WBNB
-const targettoken = '';
-const liquidityminimal = '25000000000000000000'; //minimal liquidity 25 BNB https://eth-converter.com
+const targettoken = '0xxxxxxxx'.toLowerCase();
+const liquidityminimal = ethers.utils.formatEther('25') //minimal liquidity 25 BNB
 
 
 
@@ -68,7 +68,7 @@ try {
   
   const amounts = await router.getAmountsOut(amountIn, [tokenIn, tokenOut]); 
   const getPairx = await factory.getPair(tokenIn, tokenOut); 
-  const pairBNBvalue = await erc.balanceOf(getPairx); 
+  const pairBNBvalue = await erc.balanceOf(getPairx); //getting from LP not tx addliquid xd
   var bnbne = ethers.utils.formatEther(pairBNBvalue);
   
   //debug
@@ -78,7 +78,8 @@ try {
   
   //var targettoken = '0xxxxxxxxxxxxx'; //targettoken
   //if(tokenOut === targettoken){ //idk
-  if(pairBNBvalue > liquidityminimal){
+  //if(pairBNBvalue > liquidityminimal){
+  if(ethers.utils.formatEther(pairBNBvalue) > liquidityminimal){
   //console.log(`address LP ${getPairx} -  LIQ ${bnbne} BNB`)
   
   const amountOutMin = amounts[1].sub(amounts[1].div(10));
