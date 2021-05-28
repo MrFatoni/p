@@ -93,6 +93,7 @@ try {
     {
         'gasLimit': 300000,
         'gasPrice': ethers.utils.parseUnits('5', 'gwei'),
+      // 'value': '', //use bnb
     }
   );
 
