@@ -2,7 +2,9 @@
 
 ## Contact telegram: @MRFCiki
 
-# tele cuma MRFCIKI nomer cuma 0882266xxxxx, BOT TIDAK DIJUAL
+# TELE cuma @MRFCIKI nomer cuma 0882266xxxxx, BOT TIDAK DIJUAL
+
+# AWAS SCAM
 
 
 
