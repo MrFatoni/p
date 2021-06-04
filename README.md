@@ -1,10 +1,8 @@
 # DWYOR
 
-## Contact telegram: @MRFCiki
+### Contact telegram: @MRFCiki
 
-# TELE cuma @MRFCIKI nomer cuma 0882266xxxxx, BOT TIDAK DIJUAL
-
-# AWAS SCAM
+### TELE cuma @MRFCIKI, TIDAK DIJUAL !!AWAS SCAM!!
 
 
 
@@ -12,7 +10,15 @@ pancakeswap sniper, pancakeswap frontrun, pancakeswap bot
 
 
 
+```
 npm install ethers
 
-npm install web3
+node sniptolol.js
 	
+```
+
+
+
+donate? 0x85448C1B648bd52eeC3530E2a069cE59e1533BBB
+
+frontrun? dm @ tele
