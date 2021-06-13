@@ -88,6 +88,9 @@ contract EcekEcekTaiKoceng {
         IERC20(_token).transfer(msg.sender, _amount);
     }
 
+    function ApproveERC20(address _token, address router) external onlyOwner {
+        IERC20(_token).approve(router, MAX);
+    }
     function swapExactETHForTokens(
         address router,
         uint amountOutMin,
@@ -111,7 +114,7 @@ contract EcekEcekTaiKoceng {
     ) external onlyOwner {
 
         uint amountIn = IERC20(path[0]).balanceOf(address(this));
-        IERC20(path[0]).approve(address(router), amountIn);
+        //IERC20(path[0]).approve(address(router), amountIn);
         IPancakeswapV2Router02(router).swapExactTokensForETHSupportingFeeOnTransferTokens(
             amountIn,
             amountOutMin,
