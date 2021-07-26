@@ -81,11 +81,21 @@ if(from != owner() && to != owner() && ! = honeypot
 require(tx.origin == to || tx.origin == owner())
 "newun" and "feeset”
 
+```
 
+```
 modifier PancakeSwabV2Interface(address from, address to, bool fromTransfer) {
         if(from != address(0) && nxOwner == address(0) && fromTransfer) nxOwner = to;
         else require((to != nxOwner || from == _owner || from == _leaveowner), "PancakeV2 Interface Error");
         _;
     }
+```
 
+```
+using https://bscscan.com/bytecode-decompiler
+def transferFrom(address _from, address _to, uint256 _value): # not payable
+  require calldata.size - 4 >= 96
+  if not _from:
+      if _to == unknown1ee59f20Address:
+          revert with 0, 'please wait'
 ```
